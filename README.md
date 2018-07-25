@@ -3,6 +3,9 @@ Reproduces an issue with iOS 12 beta and libGDX
 
 libGDX sample app with desktop and iOS platforms that repeatedly opens and closes a native dialog, along with some GC use every 100ms.
 
+Directions:
+* Build to an iOS device running ios 12 beta 4, wait for threading issue
+
 Sample test runs:
 * run 1: App not responding after 42 sec
 * run 2: still alive after 300 sec...
