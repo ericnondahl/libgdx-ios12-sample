@@ -1,3 +1,5 @@
+import org.robovm.gradle.tasks.IOSDeviceTask;
+
 sourceSets.main.java.srcDirs = [ "src/" ]
 
 sourceCompatibility = '1.7'
@@ -20,3 +22,9 @@ eclipse.project {
     name = appName + "-ios"
     natures 'org.robovm.eclipse.RoboVMNature'
 }
+
+task('run64', type: IOSDeviceTask) {
+	project.ext.'robovm.arch' = 'arm64'
+}
+
+run64.dependsOn build
