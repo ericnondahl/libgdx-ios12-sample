@@ -3,6 +3,9 @@ Reproduces an issue with iOS 12 beta and libGDX
 
 libGDX sample app with desktop and iOS platforms that repeatedly opens and closes a native dialog, along with some GC use every 100ms.
 
+Run on a local 64 bit device with:
+./gradlew run64
+
 Sample test runs:
 run 1: App not responding after 42 sec
 run 2: still alive after 300 sec...
